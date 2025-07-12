@@ -41,30 +41,32 @@ export default function AboutSection() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl sm:text-5xl font-cinzel font-bold cream-light mb-8 text-shadow">
-              About Tristen
-            </h2>
-            <p className="text-xl cream-medium mb-8 leading-relaxed">
-              I'm not just a massage therapist. I'm a multi-modality bodyworker with a strong foundation in health, strength, recovery, and movement.
-            </p>
-            <p className="text-lg cream-light/90 mb-8 leading-relaxed">
-              As a strong, grounded practitioner with a background in strength training, mobility work, and energy healing, I bring a unique, integrative touch to every session—one that truly meets the needs of the athletic, active, and high-performing body.
-            </p>
-            
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {credentials.map((cred, index) => (
-                <motion.div
-                  key={index}
-                  className="bg-black/60 backdrop-blur-sm border border-jungle-medium rounded-lg p-4 transition-all duration-300 hover:bg-black/70"
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: index * 0.1 }}
-                  viewport={{ once: true }}
-                >
-                  <cred.icon className="text-earth-light mb-2" size={24} />
-                  <p className="cream-light font-semibold text-sm">{cred.title}</p>
-                </motion.div>
-              ))}
+            <div className="bg-black/60 backdrop-blur-sm rounded-2xl p-8 border border-jungle-medium/30">
+              <h2 className="text-4xl sm:text-5xl font-cinzel font-bold cream-light mb-8 text-shadow">
+                About Tristen
+              </h2>
+              <p className="text-xl cream-medium mb-8 leading-relaxed">
+                I'm not just a massage therapist. I'm a multi-modality bodyworker with a strong foundation in health, strength, recovery, and movement.
+              </p>
+              <p className="text-lg cream-light/90 mb-8 leading-relaxed">
+                As a strong, grounded practitioner with a background in strength training, mobility work, and energy healing, I bring a unique, integrative touch to every session—one that truly meets the needs of the athletic, active, and high-performing body.
+              </p>
+              
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {credentials.map((cred, index) => (
+                  <motion.div
+                    key={index}
+                    className="bg-black/60 backdrop-blur-sm border border-jungle-medium rounded-lg p-4 transition-all duration-300 hover:bg-black/70"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: index * 0.1 }}
+                    viewport={{ once: true }}
+                  >
+                    <cred.icon className="text-earth-light mb-2" size={24} />
+                    <p className="cream-light font-semibold text-sm">{cred.title}</p>
+                  </motion.div>
+                ))}
+              </div>
             </div>
           </motion.div>
           

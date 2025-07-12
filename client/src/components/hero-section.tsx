@@ -22,55 +22,57 @@ export default function HeroSection() {
       </div>
       
       <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
-        <motion.h1 
-          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-cinzel font-bold cream-light mb-6 leading-tight text-shadow"
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, ease: "easeOut" }}
-        >
-          TRISTEN'S<br />
-          <span className="text-earth-light">THERAPEUTICS</span>
-        </motion.h1>
-        
-        <motion.p 
-          className="text-xl sm:text-2xl md:text-3xl font-cinzel font-medium cream-medium mb-8 text-shadow"
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
-        >
-          Advanced Bodywork for Active Lives
-        </motion.p>
-        
-        <motion.p 
-          className="text-lg sm:text-xl cream-light/90 mb-12 max-w-3xl mx-auto leading-relaxed text-shadow"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, ease: "easeOut", delay: 0.4 }}
-        >
-          Where massage meets movement science. Deep, focused therapeutic bodywork for people who train hard, move often, and expect real results.
-        </motion.p>
-        
-        <motion.div 
-          className="flex flex-col sm:flex-row gap-4 justify-center"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, ease: "easeOut", delay: 0.6 }}
-        >
-          <button 
-            onClick={() => scrollToSection('contact')}
-            className="inline-flex items-center px-8 py-4 bg-earth-light hover:bg-earth-dark text-black font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 jungle-shadow font-open"
+        <div className="bg-black/60 backdrop-blur-sm rounded-2xl p-8 md:p-12 border border-jungle-medium/30">
+          <motion.h1 
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-cinzel font-bold cream-light mb-6 leading-tight text-shadow"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeOut" }}
           >
-            <Calendar className="mr-2" size={20} />
-            Book Your Session
-          </button>
-          <button 
-            onClick={() => scrollToSection('services')}
-            className="inline-flex items-center px-8 py-4 border-2 border-cream-light cream-light hover:bg-cream-light hover:text-black font-semibold rounded-lg transition-all duration-300 font-open"
+            TRISTEN'S<br />
+            <span className="text-earth-light">THERAPEUTICS</span>
+          </motion.h1>
+          
+          <motion.p 
+            className="text-xl sm:text-2xl md:text-3xl font-cinzel font-medium cream-medium mb-8 text-shadow"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
           >
-            <Dumbbell className="mr-2" size={20} />
-            View Services
-          </button>
-        </motion.div>
+            Advanced Bodywork for Active Lives
+          </motion.p>
+          
+          <motion.p 
+            className="text-lg sm:text-xl cream-light/90 mb-12 max-w-3xl mx-auto leading-relaxed text-shadow"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeOut", delay: 0.4 }}
+          >
+            Where massage meets movement science. Deep, focused therapeutic bodywork for people who train hard, move often, and expect real results.
+          </motion.p>
+          
+          <motion.div 
+            className="flex flex-col sm:flex-row gap-4 justify-center"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeOut", delay: 0.6 }}
+          >
+            <button 
+              onClick={() => scrollToSection('contact')}
+              className="inline-flex items-center px-8 py-4 bg-earth-light hover:bg-earth-dark text-black font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 jungle-shadow font-open"
+            >
+              <Calendar className="mr-2" size={20} />
+              Book Your Session
+            </button>
+            <button 
+              onClick={() => scrollToSection('services')}
+              className="inline-flex items-center px-8 py-4 border-2 border-cream-light cream-light hover:bg-cream-light hover:text-black font-semibold rounded-lg transition-all duration-300 font-open"
+            >
+              <Dumbbell className="mr-2" size={20} />
+              View Services
+            </button>
+          </motion.div>
+        </div>
       </div>
     </section>
   );
