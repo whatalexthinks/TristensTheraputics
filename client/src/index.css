@@ -24,14 +24,14 @@
   --ring: hsl(142, 20%, 25%);
   --radius: 0.5rem;
   
-  /* Custom jungle theme colors */
-  --jungle-dark: hsl(142, 50%, 8%);
-  --jungle-medium: hsl(142, 40%, 18%);
-  --jungle-light: hsl(142, 30%, 25%);
-  --earth-dark: hsl(33, 20%, 45%);
-  --earth-light: hsl(33, 35%, 60%);
-  --cream-light: hsl(38, 25%, 90%);
-  --cream-medium: hsl(35, 20%, 75%);
+  /* Custom jungle theme colors - darker, more atmospheric */
+  --jungle-dark: hsl(142, 60%, 6%);
+  --jungle-medium: hsl(142, 50%, 12%);
+  --jungle-light: hsl(142, 40%, 18%);
+  --earth-dark: hsl(30, 25%, 35%);
+  --earth-light: hsl(30, 40%, 55%);
+  --cream-light: hsl(45, 30%, 85%);
+  --cream-medium: hsl(40, 25%, 70%);
 }
 
 .dark {

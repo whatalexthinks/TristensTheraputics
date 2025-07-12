@@ -76,14 +76,14 @@ export default function ContactSection() {
 
   return (
     <section id="contact" className="py-20 relative">
-      {/* Dark jungle atmosphere tarzan */}
+      {/* Dark jungle atmosphere - deeper, more mysterious */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80')"
+          backgroundImage: "url('https://images.unsplash.com/photo-1518837695005-2083093ee35b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')"
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-jungle-dark/80 to-black/90"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/85 via-jungle-dark/90 to-black/95"></div>
       </div>
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -104,6 +104,7 @@ export default function ContactSection() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <motion.div
+            className="bg-black/80 backdrop-blur-sm border border-jungle-medium rounded-lg p-8 jungle-shadow"
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
