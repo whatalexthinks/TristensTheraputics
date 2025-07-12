@@ -90,21 +90,21 @@ export default function HeroSection() {
         </motion.p>
         
         <motion.div 
-          className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16 px-4"
+          className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16 w-full max-w-2xl mx-auto"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut", delay: 0.8 }}
         >
           <button 
             onClick={() => scrollToSection('contact')}
-            className="group inline-flex items-center justify-center px-8 py-4 bg-earth-gradient hover:bg-earth-light text-jungle-dark font-bold rounded-full transition-all duration-300 transform hover:scale-105 button-glow font-open text-lg shadow-2xl min-w-[200px]"
+            className="group w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 bg-earth-gradient hover:bg-earth-light text-jungle-dark font-bold rounded-full transition-all duration-300 transform hover:scale-105 button-glow font-open text-lg shadow-2xl"
           >
             <Calendar className="mr-3 group-hover:rotate-12 transition-transform duration-300" size={20} />
             Book Your Session
           </button>
           <button 
             onClick={() => scrollToSection('services')}
-            className="group inline-flex items-center justify-center px-8 py-4 glass-effect border-2 border-cream-light/30 cream-light hover:bg-cream-light/10 font-bold rounded-full transition-all duration-300 font-open text-lg backdrop-blur-md min-w-[200px]"
+            className="group w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 glass-effect border-2 border-cream-light/30 cream-light hover:bg-cream-light/10 font-bold rounded-full transition-all duration-300 font-open text-lg backdrop-blur-md"
           >
             <Dumbbell className="mr-3 group-hover:rotate-12 transition-transform duration-300" size={20} />
             View Services

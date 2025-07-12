@@ -16,10 +16,10 @@ export default function Navigation() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-40 glass-effect border-b border-jungle-light/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-center items-center h-18">
+        <div className="flex justify-center items-center h-18 w-full">
           {/* Desktop menu - centered */}
-          <div className="hidden md:block">
-            <div className="flex items-center space-x-12">
+          <div className="hidden md:flex justify-center w-full">
+            <div className="flex items-center space-x-8">
               <button 
                 onClick={() => scrollToSection('services')}
                 className="cream-light hover:text-gold transition-all duration-300 font-open font-medium px-4 py-3 rounded-md hover:bg-jungle-light/20 relative group"
@@ -41,13 +41,17 @@ export default function Navigation() {
                 Pricing
                 <span className="absolute bottom-0 left-0 w-full h-0.5 bg-gold-accent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
               </button>
-              <button 
-                onClick={() => scrollToSection('contact')}
-                className="bg-earth-gradient text-jungle-dark hover:bg-earth-light transition-all duration-300 font-open font-semibold px-8 py-3 rounded-full button-glow"
-              >
-                Book Now
-              </button>
             </div>
+          </div>
+          
+          {/* Book Now button - positioned separately on the right */}
+          <div className="hidden md:block absolute right-4">
+            <button 
+              onClick={() => scrollToSection('contact')}
+              className="bg-earth-gradient text-jungle-dark hover:bg-earth-light transition-all duration-300 font-open font-semibold px-6 py-2 rounded-full button-glow"
+            >
+              Book Now
+            </button>
           </div>
           
           {/* Mobile menu button - positioned on the right */}
