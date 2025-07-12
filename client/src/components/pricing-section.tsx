@@ -52,14 +52,12 @@ export default function PricingSection() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <div className="bg-black/60 backdrop-blur-sm rounded-2xl p-8 border border-jungle-medium/30 inline-block">
-            <h2 className="text-4xl sm:text-5xl font-cinzel font-bold cream-light mb-6 text-shadow">
-              Pricing
-            </h2>
-            <p className="text-xl cream-medium">
-              Investment in your recovery and performance
-            </p>
-          </div>
+          <h2 className="text-4xl sm:text-5xl font-cinzel font-bold cream-light mb-6 text-shadow">
+            Pricing
+          </h2>
+          <p className="text-xl cream-medium">
+            Investment in your recovery and performance
+          </p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -107,14 +105,12 @@ export default function PricingSection() {
           transition={{ duration: 0.8, delay: 0.6 }}
           viewport={{ once: true }}
         >
-          <div className="bg-black/60 backdrop-blur-sm rounded-2xl p-6 border border-jungle-medium/30 inline-block">
-            <p className="text-lg cream-light mb-4">
-              <strong>Serving St. George, Utah</strong>
-            </p>
-            <p className="cream-medium">
-              $20 mobile service fee applies to all mobile services except first-time massage clients
-            </p>
-          </div>
+          <p className="text-lg cream-light mb-4">
+            <strong>Serving St. George, Utah</strong>
+          </p>
+          <p className="cream-medium">
+            $20 mobile service fee applies to all mobile services except first-time massage clients
+          </p>
         </motion.div>
       </div>
     </section>

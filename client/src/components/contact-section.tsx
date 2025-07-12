@@ -94,14 +94,12 @@ export default function ContactSection() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <div className="bg-black/60 backdrop-blur-sm rounded-2xl p-8 border border-jungle-medium/30 inline-block">
-            <h2 className="text-4xl sm:text-5xl font-cinzel font-bold cream-light mb-6 text-shadow">
-              Book Your Session
-            </h2>
-            <p className="text-xl cream-medium mb-8">
-              Ready to take your recovery and performance to the next level?
-            </p>
-          </div>
+          <h2 className="text-4xl sm:text-5xl font-cinzel font-bold cream-light mb-6 text-shadow">
+            Book Your Session
+          </h2>
+          <p className="text-xl cream-medium mb-8">
+            Ready to take your recovery and performance to the next level?
+          </p>
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -111,37 +109,35 @@ export default function ContactSection() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <div className="bg-black/60 backdrop-blur-sm rounded-2xl p-8 border border-jungle-medium/30">
-              <h3 className="text-2xl font-cinzel font-bold cream-light mb-6">
-                Contact Information
-              </h3>
-              <div className="space-y-6">
-                <div className="flex items-center">
-                  <div className="w-12 h-12 bg-earth-light rounded-full flex items-center justify-center mr-4">
-                    <MapPin className="text-black" size={20} />
-                  </div>
-                  <div>
-                    <h4 className="cream-light font-semibold">Location</h4>
-                    <p className="cream-medium">Serving St. George, Utah</p>
-                  </div>
+            <h3 className="text-2xl font-cinzel font-bold cream-light mb-6">
+              Contact Information
+            </h3>
+            <div className="space-y-6">
+              <div className="flex items-center">
+                <div className="w-12 h-12 bg-earth-light rounded-full flex items-center justify-center mr-4">
+                  <MapPin className="text-black" size={20} />
                 </div>
-                <div className="flex items-center">
-                  <div className="w-12 h-12 bg-earth-light rounded-full flex items-center justify-center mr-4">
-                    <Phone className="text-black" size={20} />
-                  </div>
-                  <div>
-                    <h4 className="cream-light font-semibold">Phone</h4>
-                    <p className="cream-medium">Call to schedule your appointment</p>
-                  </div>
+                <div>
+                  <h4 className="cream-light font-semibold">Location</h4>
+                  <p className="cream-medium">Serving St. George, Utah</p>
                 </div>
-                <div className="flex items-center">
-                  <div className="w-12 h-12 bg-earth-light rounded-full flex items-center justify-center mr-4">
-                    <Mail className="text-black" size={20} />
-                  </div>
-                  <div>
-                    <h4 className="cream-light font-semibold">Email</h4>
-                    <p className="cream-medium">Send a message using the form</p>
-                  </div>
+              </div>
+              <div className="flex items-center">
+                <div className="w-12 h-12 bg-earth-light rounded-full flex items-center justify-center mr-4">
+                  <Phone className="text-black" size={20} />
+                </div>
+                <div>
+                  <h4 className="cream-light font-semibold">Phone</h4>
+                  <p className="cream-medium">Call to schedule your appointment</p>
+                </div>
+              </div>
+              <div className="flex items-center">
+                <div className="w-12 h-12 bg-earth-light rounded-full flex items-center justify-center mr-4">
+                  <Mail className="text-black" size={20} />
+                </div>
+                <div>
+                  <h4 className="cream-light font-semibold">Email</h4>
+                  <p className="cream-medium">Send a message using the form</p>
                 </div>
               </div>
             </div>

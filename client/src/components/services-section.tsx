@@ -62,14 +62,12 @@ export default function ServicesSection() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <div className="bg-black/60 backdrop-blur-sm rounded-2xl p-8 border border-jungle-medium/30 inline-block">
-            <h2 className="text-4xl sm:text-5xl font-cinzel font-bold cream-light mb-6 text-shadow">
-              What I Offer
-            </h2>
-            <p className="text-xl cream-medium max-w-3xl mx-auto">
-              Specialized therapeutic treatments designed for athletes, lifters, and active individuals
-            </p>
-          </div>
+          <h2 className="text-4xl sm:text-5xl font-cinzel font-bold cream-light mb-6 text-shadow">
+            What I Offer
+          </h2>
+          <p className="text-xl cream-medium max-w-3xl mx-auto">
+            Specialized therapeutic treatments designed for athletes, lifters, and active individuals
+          </p>
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
