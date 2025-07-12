@@ -1,0 +1,186 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(240, 10%, 3.9%);
+  --foreground: hsl(38, 25%, 90%);
+  --muted: hsl(240, 3.7%, 15.9%);
+  --muted-foreground: hsl(240, 5%, 64.9%);
+  --popover: hsl(240, 10%, 3.9%);
+  --popover-foreground: hsl(38, 25%, 90%);
+  --card: hsl(240, 10%, 3.9%);
+  --card-foreground: hsl(38, 25%, 90%);
+  --border: hsl(142, 20%, 25%);
+  --input: hsl(142, 20%, 25%);
+  --primary: hsl(33, 35%, 60%);
+  --primary-foreground: hsl(240, 10%, 3.9%);
+  --secondary: hsl(142, 20%, 25%);
+  --secondary-foreground: hsl(38, 25%, 90%);
+  --accent: hsl(142, 20%, 25%);
+  --accent-foreground: hsl(38, 25%, 90%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 85.7%, 97.3%);
+  --ring: hsl(142, 20%, 25%);
+  --radius: 0.5rem;
+  
+  /* Custom jungle theme colors */
+  --jungle-dark: hsl(142, 50%, 8%);
+  --jungle-medium: hsl(142, 40%, 18%);
+  --jungle-light: hsl(142, 30%, 25%);
+  --earth-dark: hsl(33, 20%, 45%);
+  --earth-light: hsl(33, 35%, 60%);
+  --cream-light: hsl(38, 25%, 90%);
+  --cream-medium: hsl(35, 20%, 75%);
+}
+
+.dark {
+  --background: hsl(240, 10%, 3.9%);
+  --foreground: hsl(38, 25%, 90%);
+  --muted: hsl(240, 3.7%, 15.9%);
+  --muted-foreground: hsl(240, 5%, 64.9%);
+  --popover: hsl(240, 10%, 3.9%);
+  --popover-foreground: hsl(38, 25%, 90%);
+  --card: hsl(240, 10%, 3.9%);
+  --card-foreground: hsl(38, 25%, 90%);
+  --border: hsl(142, 20%, 25%);
+  --input: hsl(142, 20%, 25%);
+  --primary: hsl(33, 35%, 60%);
+  --primary-foreground: hsl(240, 10%, 3.9%);
+  --secondary: hsl(142, 20%, 25%);
+  --secondary-foreground: hsl(38, 25%, 90%);
+  --accent: hsl(142, 20%, 25%);
+  --accent-foreground: hsl(38, 25%, 90%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 85.7%, 97.3%);
+  --ring: hsl(142, 20%, 25%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Open Sans', sans-serif;
+    background-color: black;
+    color: var(--cream-light);
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .font-cinzel {
+    font-family: 'Cinzel', serif;
+  }
+  
+  .font-open {
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .jungle-dark {
+    background-color: var(--jungle-dark);
+  }
+  
+  .jungle-medium {
+    background-color: var(--jungle-medium);
+  }
+  
+  .jungle-light {
+    background-color: var(--jungle-light);
+  }
+  
+  .earth-dark {
+    background-color: var(--earth-dark);
+  }
+  
+  .earth-light {
+    background-color: var(--earth-light);
+  }
+  
+  .cream-light {
+    color: var(--cream-light);
+  }
+  
+  .cream-medium {
+    color: var(--cream-medium);
+  }
+  
+  .text-jungle-dark {
+    color: var(--jungle-dark);
+  }
+  
+  .text-jungle-medium {
+    color: var(--jungle-medium);
+  }
+  
+  .text-jungle-light {
+    color: var(--jungle-light);
+  }
+  
+  .text-earth-dark {
+    color: var(--earth-dark);
+  }
+  
+  .text-earth-light {
+    color: var(--earth-light);
+  }
+  
+  .bg-jungle-dark {
+    background-color: var(--jungle-dark);
+  }
+  
+  .bg-jungle-medium {
+    background-color: var(--jungle-medium);
+  }
+  
+  .bg-jungle-light {
+    background-color: var(--jungle-light);
+  }
+  
+  .bg-earth-dark {
+    background-color: var(--earth-dark);
+  }
+  
+  .bg-earth-light {
+    background-color: var(--earth-light);
+  }
+  
+  .border-jungle-dark {
+    border-color: var(--jungle-dark);
+  }
+  
+  .border-jungle-medium {
+    border-color: var(--jungle-medium);
+  }
+  
+  .border-jungle-light {
+    border-color: var(--jungle-light);
+  }
+  
+  .jungle-gradient {
+    background: linear-gradient(135deg, var(--jungle-dark) 0%, var(--jungle-medium) 50%, var(--jungle-light) 100%);
+  }
+  
+  .mist-overlay {
+    background: linear-gradient(180deg, rgba(0,0,0,0.7) 0%, rgba(15,47,31,0.8) 50%, rgba(0,0,0,0.9) 100%);
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+  }
+  
+  .jungle-shadow {
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  }
+  
+  .transition-all-300 {
+    transition: all 0.3s ease;
+  }
+}
