@@ -104,7 +104,7 @@ export default function HeroSection() {
           </button>
           <button 
             onClick={() => scrollToSection('services')}
-            className="group w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 glass-effect border-2 border-cream-light/30 cream-light hover:bg-cream-light/10 font-bold rounded-full transition-all duration-300 font-open text-lg backdrop-blur-md"
+            className="group w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 bg-earth-medium hover:bg-earth-light text-jungle-dark font-bold rounded-full transition-all duration-300 font-open text-lg shadow-2xl"
           >
             <Dumbbell className="mr-3 group-hover:rotate-12 transition-transform duration-300" size={20} />
             View Services
