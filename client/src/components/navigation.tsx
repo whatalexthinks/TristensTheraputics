@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Leaf } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function Navigation() {
@@ -14,55 +14,47 @@ export default function Navigation() {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-40 bg-black/80 backdrop-blur-sm border-b border-jungle-medium">
+    <nav className="fixed top-0 left-0 right-0 z-40 glass-effect border-b border-jungle-light/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
-          <div className="flex items-center">
-            <motion.h1 
-              className="text-xl font-cinzel font-bold cream-light"
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-            >
-              Tristen's Therapeutics
-            </motion.h1>
-          </div>
-          
-          {/* Desktop menu */}
+        <div className="flex justify-center items-center h-18">
+          {/* Desktop menu - centered */}
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-8">
+            <div className="flex items-center space-x-12">
               <button 
                 onClick={() => scrollToSection('services')}
-                className="cream-light hover:text-earth-light transition-colors duration-300 font-open"
+                className="cream-light hover:text-gold transition-all duration-300 font-open font-medium px-4 py-3 rounded-md hover:bg-jungle-light/20 relative group"
               >
                 Services
+                <span className="absolute bottom-0 left-0 w-full h-0.5 bg-gold-accent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
               </button>
               <button 
                 onClick={() => scrollToSection('about')}
-                className="cream-light hover:text-earth-light transition-colors duration-300 font-open"
+                className="cream-light hover:text-gold transition-all duration-300 font-open font-medium px-4 py-3 rounded-md hover:bg-jungle-light/20 relative group"
               >
                 About
+                <span className="absolute bottom-0 left-0 w-full h-0.5 bg-gold-accent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
               </button>
               <button 
                 onClick={() => scrollToSection('pricing')}
-                className="cream-light hover:text-earth-light transition-colors duration-300 font-open"
+                className="cream-light hover:text-gold transition-all duration-300 font-open font-medium px-4 py-3 rounded-md hover:bg-jungle-light/20 relative group"
               >
                 Pricing
+                <span className="absolute bottom-0 left-0 w-full h-0.5 bg-gold-accent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
               </button>
               <button 
                 onClick={() => scrollToSection('contact')}
-                className="cream-light hover:text-earth-light transition-colors duration-300 font-open"
+                className="bg-earth-gradient text-jungle-dark hover:bg-earth-light transition-all duration-300 font-open font-semibold px-8 py-3 rounded-full button-glow"
               >
-                Contact
+                Book Now
               </button>
             </div>
           </div>
           
-          {/* Mobile menu button */}
-          <div className="md:hidden">
+          {/* Mobile menu button - positioned on the right */}
+          <div className="md:hidden absolute right-4">
             <button 
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="cream-light hover:text-earth-light"
+              className="cream-light hover:text-gold transition-colors duration-300 p-2"
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -73,35 +65,35 @@ export default function Navigation() {
       {/* Mobile menu */}
       {isMenuOpen && (
         <motion.div 
-          className="md:hidden bg-black/95 backdrop-blur-sm border-t border-jungle-medium"
+          className="md:hidden glass-effect border-t border-jungle-light/20"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3 }}
         >
-          <div className="px-2 pt-2 pb-3 space-y-1">
+          <div className="px-4 pt-2 pb-3 space-y-1">
             <button 
               onClick={() => scrollToSection('services')}
-              className="block px-3 py-2 cream-light hover:text-earth-light transition-colors duration-300 font-open"
+              className="block px-3 py-3 cream-light hover:text-gold transition-colors duration-300 font-open font-medium w-full text-left rounded-md hover:bg-jungle-light/20"
             >
               Services
             </button>
             <button 
               onClick={() => scrollToSection('about')}
-              className="block px-3 py-2 cream-light hover:text-earth-light transition-colors duration-300 font-open"
+              className="block px-3 py-3 cream-light hover:text-gold transition-colors duration-300 font-open font-medium w-full text-left rounded-md hover:bg-jungle-light/20"
             >
               About
             </button>
             <button 
               onClick={() => scrollToSection('pricing')}
-              className="block px-3 py-2 cream-light hover:text-earth-light transition-colors duration-300 font-open"
+              className="block px-3 py-3 cream-light hover:text-gold transition-colors duration-300 font-open font-medium w-full text-left rounded-md hover:bg-jungle-light/20"
             >
               Pricing
             </button>
             <button 
               onClick={() => scrollToSection('contact')}
-              className="block px-3 py-2 cream-light hover:text-earth-light transition-colors duration-300 font-open"
+              className="block px-3 py-3 bg-earth-gradient text-jungle-dark font-open font-semibold w-full text-left rounded-md mt-2"
             >
-              Contact
+              Book Now
             </button>
           </div>
         </motion.div>
