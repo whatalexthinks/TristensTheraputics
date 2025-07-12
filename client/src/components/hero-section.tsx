@@ -11,14 +11,14 @@ export default function HeroSection() {
 
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center">
-      {/* Dense jungle canopy background with heavy mist - Tarzan style */}
+      {/* Dense jungle canopy background with heavy mist */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1518837695005-2083093ee35b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')"
+          backgroundImage: "url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80')"
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-jungle-dark/60 to-black/80"></div>
+        <div className="absolute inset-0 mist-overlay"></div>
       </div>
       
       <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
