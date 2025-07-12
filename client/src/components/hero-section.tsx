@@ -97,14 +97,14 @@ export default function HeroSection() {
         >
           <button 
             onClick={() => scrollToSection('contact')}
-            className="group w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 bg-earth-gradient hover:bg-earth-light text-jungle-dark font-bold rounded-full transition-all duration-300 transform hover:scale-105 button-glow font-open text-lg shadow-2xl"
+            className="group w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 bg-earth-light hover:bg-earth-medium text-jungle-dark font-bold rounded-full transition-all duration-300 transform hover:scale-105 button-glow font-open text-lg shadow-2xl"
           >
             <Calendar className="mr-3 group-hover:rotate-12 transition-transform duration-300" size={20} />
             Book Your Session
           </button>
           <button 
             onClick={() => scrollToSection('services')}
-            className="group w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 bg-earth-medium hover:bg-earth-light text-jungle-dark font-bold rounded-full transition-all duration-300 font-open text-lg shadow-2xl"
+            className="group w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 bg-black hover:bg-gray-800 text-cream-light font-bold rounded-full transition-all duration-300 font-open text-lg shadow-2xl"
           >
             <Dumbbell className="mr-3 group-hover:rotate-12 transition-transform duration-300" size={20} />
             View Services
