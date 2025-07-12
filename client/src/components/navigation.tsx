@@ -55,10 +55,10 @@ export default function Navigation() {
           </div>
           
           {/* Mobile menu button - positioned on the right */}
-          <div className="md:hidden absolute right-4">
+          <div className="md:hidden absolute right-4 top-1">
             <button 
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="cream-light hover:text-gold transition-colors duration-300 p-2"
+              className="cream-light hover:text-gold transition-colors duration-300 p-3"
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
