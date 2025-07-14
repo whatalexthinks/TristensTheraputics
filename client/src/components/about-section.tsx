@@ -76,12 +76,12 @@ export default function AboutSection() {
             viewport={{ once: true }}
           >
             {/* Masculine figure in jungle setting with healing energy */}
-            <div className="relative bg-gradient-to-br from-jungle-medium/20 to-black/40 rounded-lg p-8 border border-jungle-medium jungle-shadow">
+            <div className="relative bg-gradient-to-br from-jungle-medium/20 to-black/40 rounded-lg p-6 border border-jungle-medium jungle-shadow">
               <div className="text-center">
-                <div className="w-32 h-32 bg-gradient-to-br from-earth-light to-earth-dark rounded-full mx-auto mb-6 flex items-center justify-center">
-                  <Leaf className="text-4xl text-black" size={48} />
+                <div className="w-24 h-24 bg-gradient-to-br from-earth-light to-earth-dark rounded-full mx-auto mb-4 flex items-center justify-center">
+                  <Leaf className="text-4xl text-black" size={36} />
                 </div>
-                <h3 className="text-2xl font-cinzel font-bold cream-light mb-4">
+                <h3 className="text-xl font-cinzel font-bold cream-light mb-3">
                   Where Strength Meets Healing
                 </h3>
                 <p className="cream-medium leading-relaxed">

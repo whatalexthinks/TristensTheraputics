@@ -70,7 +70,7 @@ export default function HeroSection() {
         </motion.h1>
         
         <motion.p 
-          className="text-xl sm:text-2xl md:text-3xl font-cinzel font-medium text-earth-light mb-8"
+          className="text-xl sm:text-2xl md:text-3xl font-cinzel font-bold text-cream-light mb-8 bg-black/50 backdrop-blur-sm px-6 py-3 rounded-lg border border-earth-light/30 inline-block"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut", delay: 0.4 }}
