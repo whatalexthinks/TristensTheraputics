@@ -76,15 +76,17 @@ export default function AboutSection() {
             viewport={{ once: true }}
           >
             {/* Masculine figure in jungle setting with healing energy */}
-            <div className="relative bg-gradient-to-br from-jungle-medium/20 to-black/40 rounded-lg p-6 border border-jungle-medium jungle-shadow">
+            <div className="relative bg-gradient-to-br from-jungle-medium/30 to-black/50 backdrop-blur-sm rounded-2xl p-8 border border-earth-light/20 shadow-2xl">
               <div className="text-center">
-                <div className="w-24 h-24 bg-gradient-to-br from-earth-light to-earth-dark rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <Leaf className="text-4xl text-black" size={36} />
+                <div className="w-20 h-20 bg-gradient-to-br from-earth-light to-earth-dark rounded-full mx-auto mb-6 flex items-center justify-center shadow-lg">
+                  <Leaf className="text-jungle-dark" size={32} />
                 </div>
-                <h3 className="text-xl font-cinzel font-bold cream-light mb-3">
+                <h3 className="text-2xl font-cinzel font-bold cream-light mb-4"
+                    style={{ textShadow: "0 2px 8px rgba(0,0,0,0.6)" }}
+                >
                   Where Strength Meets Healing
                 </h3>
-                <p className="cream-medium leading-relaxed">
+                <p className="cream-medium leading-relaxed text-lg">
                   Specializing in functional recovery, deep pressure, and athlete performance care. Whether you're an athlete, lifter, cyclist, weekend warrior, or someone recovering from injury, I combine powerful, hands-on techniques with a deep understanding of the body.
                 </p>
               </div>

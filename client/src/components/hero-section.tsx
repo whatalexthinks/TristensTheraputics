@@ -69,15 +69,21 @@ export default function HeroSection() {
           </span>
         </motion.h1>
         
-        <motion.p 
-          className="text-xl sm:text-2xl md:text-3xl font-cinzel font-medium text-earth-light mb-8"
+        <motion.div 
+          className="inline-block mb-8"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut", delay: 0.4 }}
-          style={{ textShadow: "0 2px 10px rgba(0,0,0,0.8)" }}
         >
-          Advanced Bodywork for Active Lives
-        </motion.p>
+          <p className="text-xl sm:text-2xl md:text-3xl font-cinzel font-medium text-earth-light px-6 py-3 bg-black/30 backdrop-blur-md rounded-2xl border border-white/20"
+             style={{ 
+               textShadow: "0 2px 10px rgba(0,0,0,0.8)",
+               filter: "drop-shadow(0 8px 32px rgba(0,0,0,0.4))"
+             }}
+          >
+            Advanced Bodywork for Active Lives
+          </p>
+        </motion.div>
         
         <motion.p 
           className="text-lg sm:text-xl cream-light/95 mb-12 max-w-3xl mx-auto leading-relaxed"
