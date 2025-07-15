@@ -128,7 +128,11 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <h4 className="cream-light font-semibold">Phone</h4>
-                  <p className="cream-medium">Call to schedule your appointment</p>
+                  <p className="cream-medium">
+                    <a href="tel:8082808702" className="hover:text-gold transition-colors duration-300">
+                      (808) 280-8702
+                    </a>
+                  </p>
                 </div>
               </div>
               <div className="flex items-center">

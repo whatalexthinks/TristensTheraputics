@@ -17,8 +17,13 @@ export default function Footer() {
           <p className="text-earth-light font-cinzel text-lg mb-6">
             🌀 Where strength meets healing
           </p>
-          <p className="cream-medium">
+          <p className="cream-medium mb-4">
             Advanced Bodywork for Active Lives • Serving St. George, Utah
+          </p>
+          <p className="text-earth-light font-semibold">
+            <a href="tel:8082808702" className="hover:text-gold transition-colors duration-300">
+              (808) 280-8702
+            </a>
           </p>
         </motion.div>
       </div>

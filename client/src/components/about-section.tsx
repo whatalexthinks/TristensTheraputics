@@ -75,21 +75,28 @@ export default function AboutSection() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            {/* Masculine figure in jungle setting with healing energy */}
-            <div className="relative bg-gradient-to-br from-jungle-medium/30 to-black/50 backdrop-blur-sm rounded-2xl p-8 border border-earth-light/20 shadow-2xl">
-              <div className="text-center">
-                <div className="w-20 h-20 bg-gradient-to-br from-earth-light to-earth-dark rounded-full mx-auto mb-6 flex items-center justify-center shadow-lg">
-                  <Leaf className="text-jungle-dark" size={32} />
-                </div>
-                <h3 className="text-2xl font-cinzel font-bold cream-light mb-4"
-                    style={{ textShadow: "0 2px 8px rgba(0,0,0,0.6)" }}
-                >
-                  Where Strength Meets Healing
-                </h3>
-                <p className="cream-medium leading-relaxed text-lg">
-                  Specializing in functional recovery, deep pressure, and athlete performance care. Whether you're an athlete, lifter, cyclist, weekend warrior, or someone recovering from injury, I combine powerful, hands-on techniques with a deep understanding of the body.
-                </p>
+            {/* Tristen's photo with healing energy theme */}
+            <div className="relative mb-8">
+              <div className="w-64 h-64 mx-auto rounded-full overflow-hidden border-4 border-earth-light/30 shadow-2xl">
+                <img 
+                  src="https://i.imgur.com/QHRG19x.jpeg" 
+                  alt="Tristen - Licensed Massage Therapist"
+                  className="w-full h-full object-cover"
+                />
               </div>
+              <div className="absolute inset-0 rounded-full bg-gradient-to-br from-transparent via-transparent to-black/20"></div>
+            </div>
+            
+            {/* Compact philosophy box */}
+            <div className="bg-gradient-to-br from-jungle-medium/30 to-black/50 backdrop-blur-sm rounded-xl p-6 border border-earth-light/20 shadow-xl">
+              <h3 className="text-xl font-cinzel font-bold cream-light mb-3 text-center"
+                  style={{ textShadow: "0 2px 8px rgba(0,0,0,0.6)" }}
+              >
+                Where Strength Meets Healing
+              </h3>
+              <p className="cream-medium leading-relaxed text-center">
+                Specializing in functional recovery, deep pressure, and athlete performance care. Whether you're an athlete, lifter, cyclist, weekend warrior, or someone recovering from injury, I combine powerful, hands-on techniques with a deep understanding of the body.
+              </p>
             </div>
           </motion.div>
         </div>

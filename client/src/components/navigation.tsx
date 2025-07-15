@@ -44,8 +44,14 @@ export default function Navigation() {
             </div>
           </div>
           
-          {/* Book Now button - positioned separately on the right */}
-          <div className="hidden md:block absolute right-4">
+          {/* Phone number and Book Now button - positioned separately on the right */}
+          <div className="hidden md:flex items-center space-x-4 absolute right-4">
+            <a 
+              href="tel:8082808702"
+              className="text-earth-light hover:text-gold transition-colors duration-300 font-semibold"
+            >
+              (808) 280-8702
+            </a>
             <button 
               onClick={() => scrollToSection('contact')}
               className="bg-earth-gradient text-jungle-dark hover:bg-earth-light transition-all duration-300 font-open font-semibold px-6 py-2 rounded-full button-glow"
@@ -93,6 +99,12 @@ export default function Navigation() {
             >
               Pricing
             </button>
+            <a 
+              href="tel:8082808702"
+              className="block px-3 py-3 text-earth-light hover:text-gold transition-colors duration-300 font-open font-semibold w-full text-left rounded-md hover:bg-jungle-light/20"
+            >
+              Call: (808) 280-8702
+            </a>
             <button 
               onClick={() => scrollToSection('contact')}
               className="block px-3 py-3 bg-earth-gradient text-jungle-dark font-open font-semibold w-full text-left rounded-md mt-2"
