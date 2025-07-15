@@ -33,60 +33,65 @@ export default function ContactSection() {
           </div>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="flex flex-col lg:flex-row gap-8 justify-center items-start max-w-4xl mx-auto">
           <motion.div
-            className="bg-black/50 backdrop-blur-sm border border-earth-light/30 rounded-2xl p-8 shadow-2xl"
+            className="bg-black/50 backdrop-blur-sm border border-earth-light/30 rounded-2xl p-6 shadow-2xl flex-shrink-0"
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-2xl font-cinzel font-bold cream-light mb-6">
+            <h3 className="text-xl font-cinzel font-bold cream-light mb-4">
               Contact Information
             </h3>
-            <div className="space-y-6">
+            <div className="space-y-4">
               <div className="flex items-center">
-                <div className="w-12 h-12 bg-earth-light rounded-full flex items-center justify-center mr-4">
-                  <MapPin className="text-black" size={20} />
+                <div className="w-10 h-10 bg-earth-light rounded-full flex items-center justify-center mr-3">
+                  <MapPin className="text-black" size={18} />
                 </div>
                 <div>
-                  <h4 className="cream-light font-semibold">Location</h4>
-                  <p className="cream-medium">Serving St. George, Utah</p>
+                  <h4 className="cream-light font-semibold text-sm">Location</h4>
+                  <p className="cream-medium text-sm">St. George, Utah</p>
                 </div>
               </div>
               <div className="flex items-center">
-                <div className="w-12 h-12 bg-earth-light rounded-full flex items-center justify-center mr-4">
-                  <Phone className="text-black" size={20} />
+                <div className="w-10 h-10 bg-earth-light rounded-full flex items-center justify-center mr-3">
+                  <Phone className="text-black" size={18} />
                 </div>
                 <div>
-                  <h4 className="cream-light font-semibold">Phone</h4>
-                  <p className="cream-medium">
+                  <h4 className="cream-light font-semibold text-sm">Call or Text</h4>
+                  <p className="cream-medium text-sm">
                     <a href="tel:8082808702" className="hover:text-gold transition-colors duration-300">
                       (808) 280-8702
                     </a>
                   </p>
                 </div>
               </div>
-              <div className="flex items-center">
-                <div className="w-12 h-12 bg-earth-light rounded-full flex items-center justify-center mr-4">
-                  <Mail className="text-black" size={20} />
-                </div>
-                <div>
-                  <h4 className="cream-light font-semibold">Schedule Online</h4>
-                  <p className="cream-medium">Book your appointment instantly</p>
-                </div>
-              </div>
+            </div>
+            <div className="mt-6 space-y-3">
+              <a 
+                href="tel:8082808702" 
+                className="block w-full bg-earth-light text-jungle-dark text-center py-3 rounded-lg font-semibold hover:bg-earth-medium transition-colors duration-300"
+              >
+                📞 Call to Book
+              </a>
+              <a 
+                href="sms:8082808702" 
+                className="block w-full bg-jungle-medium text-cream-light text-center py-3 rounded-lg font-semibold hover:bg-jungle-light transition-colors duration-300"
+              >
+                💬 Text to Book
+              </a>
             </div>
           </motion.div>
 
           <motion.div 
-            className="bg-black/30 backdrop-blur-sm border border-earth-light/30 rounded-2xl p-4 shadow-2xl"
+            className="bg-black/30 backdrop-blur-sm border border-earth-light/30 rounded-2xl p-3 shadow-2xl"
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <div className="rounded-xl overflow-hidden" style={{ height: '600px' }}>
+            <div className="rounded-xl overflow-hidden" style={{ height: '400px', width: '320px' }}>
               <iframe 
                 src="https://calendly.com/tristen-therapeutics/session"
                 width="100%"
