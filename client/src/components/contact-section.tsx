@@ -33,75 +33,105 @@ export default function ContactSection() {
           </div>
         </motion.div>
 
-        <div className="flex flex-col lg:flex-row gap-8 justify-center items-start max-w-4xl mx-auto">
-          <motion.div
-            className="bg-black/50 backdrop-blur-sm border border-earth-light/30 rounded-2xl p-6 shadow-2xl flex-shrink-0"
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-          >
-            <h3 className="text-xl font-cinzel font-bold cream-light mb-4">
-              Contact Information
-            </h3>
-            <div className="space-y-4">
-              <div className="flex items-center">
-                <div className="w-10 h-10 bg-earth-light rounded-full flex items-center justify-center mr-3">
-                  <MapPin className="text-black" size={18} />
+        <div className="max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Contact Information Card */}
+            <motion.div
+              className="bg-gradient-to-br from-black/60 to-jungle-dark/80 backdrop-blur-sm border border-earth-light/20 rounded-2xl p-8 shadow-2xl"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+            >
+              <h3 className="text-2xl font-cinzel font-bold cream-light mb-6 text-center">
+                Contact Tristen
+              </h3>
+              
+              <div className="space-y-6">
+                <div className="flex items-center">
+                  <div className="w-12 h-12 bg-earth-light rounded-full flex items-center justify-center mr-4">
+                    <MapPin className="text-black" size={20} />
+                  </div>
+                  <div>
+                    <h4 className="cream-light font-semibold">Location</h4>
+                    <p className="cream-medium">St. George, Utah</p>
+                  </div>
                 </div>
-                <div>
-                  <h4 className="cream-light font-semibold text-sm">Location</h4>
-                  <p className="cream-medium text-sm">St. George, Utah</p>
+                
+                <div className="flex items-center">
+                  <div className="w-12 h-12 bg-earth-light rounded-full flex items-center justify-center mr-4">
+                    <Phone className="text-black" size={20} />
+                  </div>
+                  <div>
+                    <h4 className="cream-light font-semibold">Call or Text</h4>
+                    <p className="cream-medium">
+                      <a href="tel:8082808702" className="hover:text-gold transition-colors duration-300 text-lg">
+                        (808) 280-8702
+                      </a>
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div className="flex items-center">
-                <div className="w-10 h-10 bg-earth-light rounded-full flex items-center justify-center mr-3">
-                  <Phone className="text-black" size={18} />
+              
+              <div className="mt-8 space-y-4">
+                <a 
+                  href="tel:8082808702" 
+                  className="flex items-center justify-center w-full bg-earth-light text-jungle-dark py-4 rounded-xl font-bold hover:bg-earth-medium transition-all duration-300 transform hover:scale-105 shadow-lg"
+                >
+                  <Phone className="mr-2" size={20} />
+                  Call to Book Session
+                </a>
+                <a 
+                  href="sms:8082808702" 
+                  className="flex items-center justify-center w-full bg-jungle-medium text-cream-light py-4 rounded-xl font-bold hover:bg-jungle-light transition-all duration-300 transform hover:scale-105 shadow-lg"
+                >
+                  <Mail className="mr-2" size={20} />
+                  Text to Book Session
+                </a>
+              </div>
+            </motion.div>
+
+            {/* Booking Information Card */}
+            <motion.div
+              className="bg-gradient-to-br from-black/60 to-jungle-dark/80 backdrop-blur-sm border border-earth-light/20 rounded-2xl p-8 shadow-2xl"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              viewport={{ once: true }}
+            >
+              <h3 className="text-2xl font-cinzel font-bold cream-light mb-6 text-center">
+                Booking Information
+              </h3>
+              
+              <div className="space-y-6">
+                <div className="bg-black/30 rounded-xl p-4 border border-earth-light/10">
+                  <h4 className="cream-light font-semibold mb-2">Session Types</h4>
+                  <ul className="cream-medium space-y-1 text-sm">
+                    <li>• Massage Therapy (60-90 min)</li>
+                    <li>• Active Release Technique</li>
+                    <li>• Combination Sessions</li>
+                    <li>• Consultation Available</li>
+                  </ul>
                 </div>
-                <div>
-                  <h4 className="cream-light font-semibold text-sm">Call or Text</h4>
+                
+                <div className="bg-black/30 rounded-xl p-4 border border-earth-light/10">
+                  <h4 className="cream-light font-semibold mb-2">Availability</h4>
                   <p className="cream-medium text-sm">
-                    <a href="tel:8082808702" className="hover:text-gold transition-colors duration-300">
-                      (808) 280-8702
-                    </a>
+                    Call or text to schedule your appointment. 
+                    Same-day bookings may be available.
+                  </p>
+                </div>
+                
+                <div className="bg-black/30 rounded-xl p-4 border border-earth-light/10">
+                  <h4 className="cream-light font-semibold mb-2">What to Expect</h4>
+                  <p className="cream-medium text-sm">
+                    Professional therapeutic bodywork tailored to your specific needs 
+                    and athletic goals.
                   </p>
                 </div>
               </div>
-            </div>
-            <div className="mt-6 space-y-3">
-              <a 
-                href="tel:8082808702" 
-                className="block w-full bg-earth-light text-jungle-dark text-center py-3 rounded-lg font-semibold hover:bg-earth-medium transition-colors duration-300"
-              >
-                📞 Call to Book
-              </a>
-              <a 
-                href="sms:8082808702" 
-                className="block w-full bg-jungle-medium text-cream-light text-center py-3 rounded-lg font-semibold hover:bg-jungle-light transition-colors duration-300"
-              >
-                💬 Text to Book
-              </a>
-            </div>
-          </motion.div>
-
-          <motion.div 
-            className="bg-black/30 backdrop-blur-sm border border-earth-light/30 rounded-2xl p-3 shadow-2xl"
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-          >
-            <div className="rounded-xl overflow-hidden" style={{ height: '400px', width: '320px' }}>
-              <iframe 
-                src="https://calendly.com/tristen-therapeutics/session"
-                width="100%"
-                height="100%"
-                frameBorder="0"
-                title="Schedule Your Session"
-                className="rounded-xl"
-              />
-            </div>
-          </motion.div>
+            </motion.div>
+          </div>
         </div>
       </div>
     </section>
