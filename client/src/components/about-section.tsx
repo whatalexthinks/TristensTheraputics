@@ -41,13 +41,13 @@ export default function AboutSection() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl sm:text-5xl font-cinzel font-bold cream-light mb-8 text-shadow bg-black/30 backdrop-blur-sm px-8 py-4 rounded-2xl border border-white/10 inline-block">
+            <h2 className="text-4xl sm:text-5xl font-cinzel font-bold cream-light mb-8 text-shadow">
               About Tristen
             </h2>
-            <p className="text-xl cream-medium mb-8 leading-relaxed bg-black/20 backdrop-blur-sm px-6 py-4 rounded-xl border border-white/10">
+            <p className="text-xl cream-medium mb-8 leading-relaxed">
               I'm not just a massage therapist. I'm a multi-modality bodyworker with a strong foundation in health, strength, recovery, and movement.
             </p>
-            <p className="text-lg cream-light/90 mb-8 leading-relaxed bg-black/20 backdrop-blur-sm px-6 py-4 rounded-xl border border-white/10">
+            <p className="text-lg cream-light/90 mb-8 leading-relaxed">
               As a strong, grounded practitioner with a background in strength training, mobility work, and energy healing, I bring a unique, integrative touch to every session—one that truly meets the needs of the athletic, active, and high-performing body.
             </p>
             

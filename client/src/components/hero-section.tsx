@@ -45,10 +45,19 @@ export default function HeroSection() {
       </div>
       
       <div className="relative z-10 text-center px-6 sm:px-8 lg:px-12 max-w-6xl mx-auto">
-
+        <motion.div
+          className="mb-8"
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+        >
+          <div className="w-24 h-24 bg-earth-gradient rounded-full flex items-center justify-center mx-auto mb-6 shadow-2xl">
+            <Zap className="text-jungle-dark" size={36} />
+          </div>
+        </motion.div>
         
         <motion.h1 
-          className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-cinzel font-bold cream-light mb-6 leading-tight bg-black/20 backdrop-blur-sm px-8 py-4 rounded-2xl border border-white/10 inline-block"
+          className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-cinzel font-bold cream-light mb-6 leading-tight"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
@@ -77,7 +86,7 @@ export default function HeroSection() {
         </motion.div>
         
         <motion.p 
-          className="text-lg sm:text-xl cream-light/95 mb-12 max-w-3xl mx-auto leading-relaxed bg-black/20 backdrop-blur-sm px-6 py-4 rounded-xl border border-white/10"
+          className="text-lg sm:text-xl cream-light/95 mb-12 max-w-3xl mx-auto leading-relaxed"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut", delay: 0.6 }}
