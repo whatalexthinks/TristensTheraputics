@@ -79,7 +79,7 @@ export default function AboutSection() {
             <div className="relative mb-8">
               <div className="w-64 h-64 mx-auto rounded-full overflow-hidden border-4 border-earth-light/30 shadow-2xl">
                 <img 
-                  src="https://i.imgur.com/QHRG19x.jpeg" 
+                  src="https://i.imgur.com/StiZRNg.jpeg" 
                   alt="Tristen - Licensed Massage Therapist"
                   className="w-full h-full object-cover"
                 />
