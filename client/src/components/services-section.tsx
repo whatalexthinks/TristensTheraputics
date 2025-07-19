@@ -66,7 +66,7 @@ export default function ServicesSection() {
             What I Offer
           </h2>
           <p className="text-xl cream-medium max-w-3xl mx-auto">
-            Specialized therapeutic treatments designed for athletes, lifters, and active individuals
+            Advanced massage, mobility therapy, and energy work for athletes, active individuals, and anyone seeking relief, resilience, or reconnection.
           </p>
         </motion.div>
 

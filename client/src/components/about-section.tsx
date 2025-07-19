@@ -45,10 +45,10 @@ export default function AboutSection() {
               About Tristen
             </h2>
             <p className="text-xl cream-medium mb-8 leading-relaxed">
-              I'm not just a massage therapist. I'm a multi-modality bodyworker with a strong foundation in health, strength, recovery, and movement.
+              True healing happens when we work with the body, mind, and spirit together. As a multi-modality bodyworker, I blend therapeutic massage, mobility therapy, and energy balancing to restore not just movement, but wholeness.
             </p>
             <p className="text-lg cream-light/90 mb-8 leading-relaxed">
-              As a strong, grounded practitioner with a background in strength training, mobility work, and energy healing, I bring a unique, integrative touch to every session—one that truly meets the needs of the athletic, active, and high-performing body.
+              Whether you're training, recovering, or simply seeking peace in your body, I bring a grounded, intuitive approach to support your full integration and wellbeing.
             </p>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

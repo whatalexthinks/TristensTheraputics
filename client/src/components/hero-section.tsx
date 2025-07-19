@@ -63,9 +63,9 @@ export default function HeroSection() {
           transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
           style={{ textShadow: "0 4px 20px rgba(0,0,0,0.8)" }}
         >
-          TRISTEN'S<br />
+          MONK MODE<br />
           <span className="text-gold bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
-            THERAPEUTICS
+            MASSAGE
           </span>
         </motion.h1>
         
@@ -81,7 +81,7 @@ export default function HeroSection() {
                filter: "drop-shadow(0 8px 32px rgba(0,0,0,0.4))"
              }}
           >
-            Advanced Bodywork for Active Lives
+            Intentional Massage & Bodywork for Active, Mindful Living
           </p>
         </motion.div>
         
@@ -92,7 +92,7 @@ export default function HeroSection() {
           transition={{ duration: 1, ease: "easeOut", delay: 0.6 }}
           style={{ textShadow: "0 2px 8px rgba(0,0,0,0.6)" }}
         >
-          Where massage meets movement science. Deep, focused therapeutic bodywork for people who train hard, move often, and expect real results.
+          Where technique meets intuition. Grounded, restorative bodywork for those who move with purpose, age with intention, and seek deeper balance.
         </motion.p>
         
         <motion.div 

@@ -1,8 +1,8 @@
-# Tristen's Therapeutics - Replit Project Guide
+# Monk Mode Massage - Replit Project Guide
 
 ## Overview
 
-This is a full-stack web application for Tristen's Therapeutics, a therapeutic massage and bodywork business. The application features a jungle-themed landing page with contact form functionality, built using modern web technologies.
+This is a full-stack web application for Monk Mode Massage (formerly Tristen's Therapeutics), a therapeutic massage and bodywork business. The application features a jungle-themed landing page with contact form functionality, built using modern web technologies.
 
 ## User Preferences
 
@@ -111,3 +111,14 @@ Preferred communication style: Simple, everyday language.
 - **Interface**: IStorage interface allows switching between implementations
 
 The application is designed for easy deployment on platforms like Replit, Vercel, or any Node.js hosting service with PostgreSQL support.
+
+## Recent Changes (July 2025)
+
+### Brand Update - "Monk Mode Massage"
+- Updated business name from "Tristen's Therapeutics" to "Monk Mode Massage"
+- New tagline: "Intentional Massage & Bodywork for Active, Mindful Living"
+- Updated hero copy: "Where technique meets intuition. Grounded, restorative bodywork for those who move with purpose, age with intention, and seek deeper balance."
+- Services description: "Advanced massage, mobility therapy, and energy work for athletes, active individuals, and anyone seeking relief, resilience, or reconnection."
+- About section: Emphasizes holistic approach - "True healing happens when we work with the body, mind, and spirit together"
+- Footer tagline: "🌀 Where strength meets healing"
+- Location emphasis: "Serving St. George, Utah — Mobile & In-Home Sessions Available"

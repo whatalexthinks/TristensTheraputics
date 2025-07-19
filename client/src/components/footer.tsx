@@ -12,13 +12,16 @@ export default function Footer() {
           viewport={{ once: true }}
         >
           <h3 className="text-2xl font-cinzel font-bold cream-light mb-4">
-            Tristen's Therapeutics
+            Monk Mode Massage
           </h3>
           <p className="text-earth-light font-cinzel text-lg mb-6">
             🌀 Where strength meets healing
           </p>
           <p className="cream-medium mb-4">
-            Advanced Bodywork for Active Lives • Serving St. George, Utah
+            Therapeutic Massage, Mobility & Energy Work for Active Lives
+          </p>
+          <p className="cream-medium mb-4">
+            Serving St. George, Utah — Mobile & In-Home Sessions Available
           </p>
           <p className="text-earth-light font-semibold">
             <a href="tel:8082808702" className="hover:text-gold transition-colors duration-300">
